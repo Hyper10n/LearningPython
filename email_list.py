@@ -7,3 +7,5 @@ def email_list(path):
         for line in fhand:
             if line.startswith('From:'):
                 emails.add(line[6:].rstrip())
+                
+    return emails
